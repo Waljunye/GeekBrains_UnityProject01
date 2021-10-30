@@ -46,9 +46,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0.019607844}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -176,6 +177,8 @@ GameObject:
   m_Component:
   - component: {fileID: 400002}
   - component: {fileID: 5400000}
+  - component: {fileID: 7460315116316788430}
+  - component: {fileID: 3123695874244614444}
   - component: {fileID: 13600000}
   - component: {fileID: 11400004}
   m_Layer: 0
@@ -216,6 +219,47 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &7460315116316788430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5858f6a1892e6cf4594fe2b23dac63f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthIntValue: {fileID: 11400000, guid: ca90034377ca3d74cae423ccc7008269, type: 2}
+--- !u!114 &3123695874244614444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e46cb2792a6f614cbdcfd0c37702f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameAction: {fileID: 11400000, guid: 9439630f5c0d0254e975a4ef7374a7cb, type: 2}
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7460315116316788430}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Hit
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 0
