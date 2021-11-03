@@ -90,6 +90,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\DreamForestTree\PostProcessing\Runtime\Components\UserLutComponent.cs" />
     <Compile Include="Assets\DreamForestTree\Script\FreeCam.cs" />
+    <Compile Include="Assets\Scripts\PurchasedObject.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\DreamForestTree\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
@@ -117,7 +118,11 @@
     <Compile Include="Assets\DreamForestTree\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
     <Compile Include="Assets\DreamForestTree\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
     <Compile Include="Assets\DreamForestTree\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\Scripts\PurchasedObject.cs" />
+    <Compile Include="Assets\Laterns and candles\scripts\ExtendedFlycam.cs" />
+    <Compile Include="Assets\Laterns and candles\scripts\CameraFacing.cs" />
+    <Compile Include="Assets\Scripts\FPSCounter.cs" />
+    <Compile Include="Assets\Scripts\Information.cs" />
+    <Compile Include="Assets\Scripts\Flashlight.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />

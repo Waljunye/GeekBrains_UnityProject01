@@ -8,14 +8,28 @@ public class Player : MonoBehaviour, ITakeDamage
     private int health;
     [SerializeField] private IntValue moneyAmountIntValue;
     private int moneyAmount;
+
+    public bool flashlightEnabled;
+    private bool canTurnFlashlightAgain;
     private void Start()
     {
         moneyAmount = moneyAmountIntValue.Value;
         health = healthIntValue.Value;
+        flashlightEnabled = false;
+        canTurnFlashlightAgain = true;
     }
     public int getMoneyAmount()
     {
         return moneyAmount;
+    }
+    private void FixedUpdate()
+    {
+        Debug.Log(Input.GetAxis("Enable Flashlight"));
+        if (Input.GetAxis("Enable Flashlight") != 0 && canTurnFlashlightAgain)
+        {
+            TurnFlashlight();
+        }
+        canTurnFlashlightAgain = Input.GetAxis("Enable Flashlight") != 1f;
     }
     private void OnGUI()
     {
@@ -48,6 +62,13 @@ public class Player : MonoBehaviour, ITakeDamage
         {
             Die();
         }
+    }
+
+    public bool TurnFlashlight()
+    {
+        
+        flashlightEnabled = !flashlightEnabled;
+        return flashlightEnabled;
     }
 
     public void Die()
